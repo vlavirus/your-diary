@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NoteCreatorComponent } from './shared/components/note-creator/note-creator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NoteCreatorComponent
   ],
   imports: [
     BrowserModule,
