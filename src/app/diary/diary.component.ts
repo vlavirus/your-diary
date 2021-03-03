@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DiaryComponent implements OnInit {
 
+  noteArray: string[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  addNewNote(note: string): void {
+    this.noteArray.push(note);
+  }
 }

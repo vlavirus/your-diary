@@ -1,10 +1,11 @@
 :host {
   display: block;
-  width: 345px;
+  width: 335px;
   background: #F7F8F9;
   padding: 14px;
   border-radius: 10px;
   margin: 0 auto;
+  margin-bottom: 10px;
   .cart {
     &-header {
       display: flex;
@@ -23,6 +24,13 @@
     }
     &-content {
       font-family: 'Roboto Regular 400';
+      line-height: 12px;
+      font-size: 10px;
+      p {
+        margin: 0;
+        white-space: normal;
+        overflow: hidden;
+      }
     }
   }
 }

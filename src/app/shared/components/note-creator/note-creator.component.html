@@ -1,4 +1,4 @@
-<div class="note-creator">
+<form class="note-creator" [formGroup]="form">
   <div class="note-creator__header">
     <span>Your Diary</span>
     <div class="arrow"></div>
@@ -9,11 +9,13 @@
       <span></span>
       <span></span>
     </div>
-    <textarea class="note-creator__textarea" placeholder="Write something"></textarea>
+    <textarea #textarea class="note-creator__textarea" placeholder="Write something" formControlName="text" [(ngModel)]="textAreaConten"></textarea>
   </div>
+  <app-emoji-picker *ngIf="emojiPickerShow" (sendEmoji)="addEmoji($event)"></app-emoji-picker>
   <div class="note-creator__controls">
-    <button class="note-creator__controls-smiles smile"></button>
-    <button class="note-creator__controls-save">Save</button>
+    <button *ngIf="!emojiPickerShow" class="note-creator__controls-smiles smile" (click)="emojiPickerShowToggle()"></button>
+    <button *ngIf="emojiPickerShow" class="note-creator__controls-smiles keyboard" (click)="emojiPickerShowToggle()"></button>
+    <button class="note-creator__controls-save" (click)="submit()">Save</button>
   </div>
-</div>
+</form>
 
