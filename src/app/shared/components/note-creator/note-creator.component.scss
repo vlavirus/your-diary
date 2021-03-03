@@ -1,16 +1,12 @@
 :host {
-  position: absolute;
   background: #FFFFFF;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #000000;
   border-radius: 10px;
 }
 
 .note-creator {
   padding: 16px;
   &__textarea {
+    position: relative;
     width: 363px;
     height: 95px;
     padding: 16px 16px 4px 16px;
@@ -20,8 +16,9 @@
     border-radius: 4px;
     margin-bottom: 16px;
     outline: none;
+    z-index: 1;
     &::placeholder {
-      font-family: 'Roboto Light'git remote add origin https://github.com/vlavirus/your-diary.git;
+      font-family: 'Roboto Light';
       font-size: 14px;
       font-style: normal;
       font-weight: normal;
@@ -58,6 +55,38 @@
     &-smiles {
       outline: none;
       border: none;
+    }
+  }
+}
+
+.wrap {
+  position: relative;
+  display: inline-block;
+}
+.pull-tab {
+  height: 16px;
+  width: 10px;
+  position: absolute;
+  bottom: 21px;
+  right: 1px;
+  pointer-events: none;
+  align-items: center;
+  z-index: 2;
+  background-color: #FFFFFF;
+  span {
+    display: block;
+    height: 2px;
+    width: 18px;
+    margin-bottom: 3px;
+    background-color: #90A4AE;
+    transform: rotate(-45deg)translate(-60%);
+    &:nth-child(2) {
+      width: 12px;
+      margin-left: 3px;
+    }
+    &:last-child {
+      width: 5.2px;
+      margin-left: 6px;
     }
   }
 }

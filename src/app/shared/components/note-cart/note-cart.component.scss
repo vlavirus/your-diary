@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  width: 345px;
+  background: #F7F8F9;
+  padding: 14px;
+  border-radius: 10px;
+  margin: 0 auto;
+  .cart {
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      &__date {
+        font-family: 'Roboto Regular 400';
+        display: flex;
+        font-size: 10px;
+        line-height: 12px;
+        color: #3E52BE;
+      }
+      .calendar {
+        margin-right: 4px;
+      }
+    }
+    &-content {
+      font-family: 'Roboto Regular 400';
+    }
+  }
+}
