@@ -11,8 +11,7 @@ export class DiaryComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   addNewNote(note: string): void {
     this.noteArray.push(note);

@@ -9,7 +9,7 @@
       <span></span>
       <span></span>
     </div>
-    <textarea #textarea class="note-creator__textarea" placeholder="Write something" formControlName="text" [(ngModel)]="textAreaConten"></textarea>
+    <textarea #textarea class="note-creator__textarea" placeholder="Write something" formControlName="text" [(ngModel)]="text"></textarea>
   </div>
   <app-emoji-picker *ngIf="emojiPickerShow" (sendEmoji)="addEmoji($event)"></app-emoji-picker>
   <div class="note-creator__controls">

@@ -1,7 +1,2 @@
 <app-note-creator (onSubmit)="addNewNote($event)"></app-note-creator>
-
-<!--<ng-template *ngFor="let cart of cartArray">-->
-  <app-note-cart *ngFor="let note of noteArray" [note]="note"></app-note-cart>
-<!--</ng-template>-->
-
-<!--<app-note-cart></app-note-cart>-->
+<app-note-cart *ngFor="let note of noteArray" [note]="note"></app-note-cart>
