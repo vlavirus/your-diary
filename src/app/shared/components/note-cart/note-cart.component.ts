@@ -7,8 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NoteCartComponent implements OnInit {
 
-  date: Date = new Date();
   @Input() note!: string;
+  date: Date = new Date();
 
   constructor() { }
 
