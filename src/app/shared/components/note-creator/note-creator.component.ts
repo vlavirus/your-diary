@@ -32,7 +32,7 @@ export class NoteCreatorComponent implements OnInit {
     this.emojiPickerShow = !this.emojiPickerShow;
   }
 
-  public addEmoji(event: any): void {
+  public addEmoji(event: { emoji: { native: string; }; }): void {
     const start = this.textarea.nativeElement.selectionStart;
     this.text = this.text.slice(0, start) + event.emoji.native + this.text.slice(start, this.text.length);
     this.textarea.nativeElement.setRangeText(event.emoji.native, start, start, 'end');
