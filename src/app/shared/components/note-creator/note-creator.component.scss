@@ -75,8 +75,9 @@
   right: 1px;
   pointer-events: none;
   align-items: center;
-  z-index: 2;
   background-color: #FFFFFF;
+  padding: 0 4px 4px 0;
+  z-index: 2;
   span {
     display: block;
     height: 2px;
